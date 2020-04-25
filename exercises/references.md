@@ -51,4 +51,6 @@ cat .git/HEAD
 git checkout Exercise-references
 # create a branch from dangling commit
 git branch <new-branch-name> f95f5ae
+# create an empty branch
+> git checkout --orphan <name>
 ```
