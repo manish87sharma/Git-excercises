@@ -53,3 +53,13 @@ git log --oneline
 ```bash
 git push --set-upstream origin Exercise-commit
 ```
+
+## Garbage collector
+
+```bash
+# running the garbage collector forcefully
+> git gc --prune=now
+# list all the dangling objects
+> git fsck
+# un reachable
+```

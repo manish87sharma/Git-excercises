@@ -7,6 +7,6 @@
 > git show <commit> --stat
 #look at a file from another commit
 > git show <commit>:<file>
-# allow empty commit 
+# allow empty commit
 > git commit --allow-empty -m "root commit"
 ```
