@@ -32,4 +32,10 @@
 > git prune --expire now
 # list out object
 > git rev-list --objects --all
+# To count objects
+> git count-objects
+# dry run for git ignore
+> git check-ignore -v *
+# list all files with more details
+> git ls-files --stage --debug  
 ```
