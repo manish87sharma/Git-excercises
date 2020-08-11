@@ -37,3 +37,38 @@ git bisect bad  <commit>
 # To end bisect
 git bisect reset
 ```
+
+## git bundle
+
+Some workflows require that one or more branches of development on one machine be replicated on another machine, but the two machines cannot be directly connected, and therefore the interactive Git protocols (git, ssh, http) cannot be used.
+
+```bash
+# generate single file
+# all branches
+git bundle create myproject.bundle --all
+# only master
+git bundle create myproject.bundle master
+# till head
+git bundle create myproject.bundle HEAD
+# clone from bundle
+git clone repo.bundle
+```
+
+## git cherry-pick
+
+Apply the changes introduced by some existing commits in other branches
+
+```bash
+git cherry-pick <commit-hash1> <commit-hash2> <commit-hash3>
+```
+
+## git notes
+
+Adds, removes, or reads notes attached to objects, without touching the objects themselves.
+
+```bash
+# to add notes to object
+git notes add -f -m "message" <object-id>
+# to list notes
+git notes list
+```
